@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+<link rel="icon" href="favicon.svg"><link href="css/app.css" rel="stylesheet"></head>
+
+<body>
+	<div class="form">
+		<form action="${pageContext.request.contextPath}/register" method="post">
+			<div class="title">Register</div>
+
+			<label for="first_name">First name</label>
+			<input type="text" name="first_name" required placeholder="Dmitry" minlength="2" id="first_name">
+
+			<label for="last_name">Last name</label>
+			<input type="text" name="last_name" required placeholder="Bekker" minlength="2" id="last_name">
+
+			<label for="login">E-mail</label>
+			<input type="email" name="login" placeholder="email@gmail.com" id="login">
+
+			<label for="password">Password</label>
+			<input type="password" name="password" placeholder="********" minlength="8" id="password">
+
+			<label for="confirm_password">Confirm password</label>
+			<input type="password" name="confirm_password" placeholder="********" minlength="8" id="confirm_password">
+
+			<button type="submit">Sign up</button>
+		</form>
+
+		<a href="login.html">Sign in</a>
+	</div>
+<script src="js/app.js"></script></body>
+
+</html>
